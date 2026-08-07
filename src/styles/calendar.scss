@@ -30,12 +30,14 @@
     background-color: $dayBackgroundColor;
     border: 1px solid $dayBorderColor;
     position: relative;
+    transition:
+      transform 0.5s,
+      background-color 0.5s;
 
     &:hover {
       cursor: pointer;
       background-color: $dayBackgroundColorActive;
       transform: translate(0, $movingCellValue);
-      transition: transform 0.5s;
     }
 
     @for $i from 1 through 31 {
